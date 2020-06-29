@@ -5,8 +5,7 @@ before_action :set_article, only: [:show, :edit, :update, :destroy]
     end
 
     def index
-        @articles = Article.all
-        # .order(updated_at: :desc) to dislplay last inserted at top
+        @articles = Article.all.order(updated_at: :desc)
     end
 
     def new

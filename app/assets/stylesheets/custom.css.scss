@@ -1,7 +1,7 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-    background-color: #792b23 !important;
+    background-color: #292827d1 !important;
 }
 .nav-link {
     color: white !important;
@@ -32,6 +32,11 @@ body {
 #page-content {
   flex: 1 0 auto;
   background-color: lightgray;
+  background-image: asset-url('bg2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #sticky-footer {
