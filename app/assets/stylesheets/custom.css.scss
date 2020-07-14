@@ -1,15 +1,27 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-.navbar {
-    background-color: #292827d1 !important;
+body{
+  padding-top: 70px;
 }
-.nav-link {
-    color: white !important;
+
+.navbar {
+    color: #292a2c;
+}
+
+.navbar-nav{
+  .nav-item{
+    .nav-link {
+      color: black;
+      &:hover{
+        color: rgb(25, 194,209);
+      }
+  }
+}
 }
 #logo{
     float: left ;
     font-size: 1.7em;
-    color: white;
+    color: black;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
@@ -20,7 +32,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    // height: 450px;
 }
 
 
