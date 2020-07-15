@@ -5,7 +5,7 @@ before_action :set_article, only: [:show, :edit, :update, :destroy]
     end
 
     def index
-        @articles = Article.all.order(updated_at: :desc)
+        @articles = Article.paginate(page: params[:page], per_page: 5).order(updated_at: :desc)
     end
 
     def new

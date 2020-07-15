@@ -1,6 +1,13 @@
-<div class="mb-5">
+<div class="article-index">
   <h1 class="text-center mt-5">Listing all articles</h1>
+  <div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+  </div>
   <%= render 'article' %>
+  <div class="flickr_pagination m-3">
+    <%= will_paginate @articles, :container => false %>
+  </div>
 </div>
+
 
 
