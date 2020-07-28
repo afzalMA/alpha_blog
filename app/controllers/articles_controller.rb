@@ -40,7 +40,8 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
 
     def destroy
         @article.destroy
-        redirect_to articles_path
+        flash[:notice]="Article was deleted Successfully"
+        current_user.admin? ? (redirect_to articles_path) : (redirect_to current_user)
     end
 
     
